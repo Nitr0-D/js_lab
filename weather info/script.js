@@ -10,8 +10,9 @@ const lowValue = document.getElementById('lowValue')
 
 console.log('works')
 
-input.addEventListener('keydown', async function getWeatherData(city) {
-    city.preventDefault()
+input.addEventListener('keydown', async function (event) {
+    if(event.key === 'Enter') {
+    event.preventDefault()
     try {
         // This calls your secret backend using the shortcut we made
         const response = await fetch('/api/getWeather?city=' + city);
@@ -20,6 +21,7 @@ input.addEventListener('keydown', async function getWeatherData(city) {
     } catch (error) {
         console.error("Error:", error);
         alert("Check your console! Something went wrong.");
+    }
     }
 } )
 
