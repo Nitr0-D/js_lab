@@ -1,4 +1,5 @@
 const input = document.querySelector('input')
+const city = document.getElementById('city')
 const date = document.getElementById('image')
 const temperature = document.getElementById('temperature')
 const weatherConditions = document.getElementById('weatherConditions')
