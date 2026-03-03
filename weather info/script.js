@@ -8,7 +8,7 @@ const highValue = document.getElementById('highValue')
 const lowPlaceholder = document.getElementById('lowPlaceholder')
 const lowValue = document.getElementById('lowValue')
 
-
+console.log('works')
 async function getWeatherData(city) {
 try {
 // This calls your secret backend using the shortcut we made
