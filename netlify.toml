@@ -1,5 +1,5 @@
 [build]
-base = "weatherinfo"
+base = "weather info"
 publish = "."
 
 [functions]
