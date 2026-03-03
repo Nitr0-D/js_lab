@@ -8,7 +8,6 @@ const highValue = document.getElementById('highValue')
 const lowPlaceholder = document.getElementById('lowPlaceholder')
 const lowValue = document.getElementById('lowValue')
 
-console.log('works')
 
 input.addEventListener('keydown', async function (event) {
     if(event.key === 'Enter') {
@@ -25,3 +24,4 @@ input.addEventListener('keydown', async function (event) {
     }
 } )
 
+console.log('works')
