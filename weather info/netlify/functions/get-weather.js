@@ -3,7 +3,7 @@ exports.handler = async (event) => {
 
     const key = process.env.WEATHER_API_KEY
 
-    const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=${city}&key=${key}&dt=2026-03-01`);
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=${city}&key=${key}`);
     const data = await response.json();
 
     return {
