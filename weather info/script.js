@@ -23,4 +23,3 @@ input.addEventListener('keydown', async function getWeatherData(city) {
     }
 } )
 
-getWeatherData(city)
