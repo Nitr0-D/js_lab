@@ -13,7 +13,7 @@ input.addEventListener('keydown', async function (event) {
     if(event.key === 'Enter') {
     event.preventDefault()
     const input = document.getElementById('input')
-    console.log(input.value)
+    console.log(input.textContent)
     // try {
     //     const input = document.querySelector('input')
     //     // This calls your secret backend using the shortcut we made
