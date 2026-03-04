@@ -12,17 +12,19 @@ const lowValue = document.getElementById('lowValue')
 input.addEventListener('keydown', async function (event) {
     if(event.key === 'Enter') {
     event.preventDefault()
-    try {
-        const input = document.querySelector('input')
-        // This calls your secret backend using the shortcut we made
-        console.log(input)
-        const data = await response.json()
-        console.log(data)
+    const input = document.getElementById('input')
+    console.log(input)
+    // try {
+    //     const input = document.querySelector('input')
+    //     // This calls your secret backend using the shortcut we made
+    //     console.log(input.value)
+    //     const data = await response.json()
+    //     console.log(data)
 
-    } catch (error) {
-        console.error("Error:", error);
-        alert("Check your console! Something went wrong.");
-    }
+    // } catch (error) {
+    //     console.error("Error:", error);
+    //     alert("Check your console! Something went wrong.");
+    // }
     }
 } )
 
