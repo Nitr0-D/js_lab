@@ -12,8 +12,6 @@ const lowValue = document.getElementById('lowValue')
 input.addEventListener('keydown', async function (event) {
     if(event.key === 'Enter') {
     event.preventDefault()
-    const input = document.querySelector('input')
-    console.log(input.value)
     try {
         const input = document.querySelector('input')
         // This calls your secret backend using the shortcut we made
