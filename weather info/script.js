@@ -12,19 +12,19 @@ const lowValue = document.getElementById('lowValue')
 input.addEventListener('keydown', async function (event) {
     if(event.key === 'Enter') {
     event.preventDefault()
-    const input = document.getElementById('input')
-    console.log(input.textContent)
-    // try {
-    //     const input = document.querySelector('input')
-    //     // This calls your secret backend using the shortcut we made
-    //     console.log(input.value)
-    //     const data = await response.json()
-    //     console.log(data)
+    const input = document.querySelector('input')
+    console.log(input.value)
+    try {
+        const input = document.querySelector('input')
+        // This calls your secret backend using the shortcut we made
+        const response = await fetch('/api/get-weather?city=' + encodeURIComponent((input.value)));
+        const data = await response.json()
+        console.log(data)
 
-    // } catch (error) {
-    //     console.error("Error:", error);
-    //     alert("Check your console! Something went wrong.");
-    // }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Check your console! Something went wrong.");
+    }
     }
 } )
 
